@@ -9,7 +9,6 @@ fd.close
 PID_list = []
 for i in range(input_1):
     ret = os.fork()
-    
     if ret == 0:
         pid = os.getpid()
         with open(f"/home/nk-nicolas/Documentos/Apuntes/Personal-Projects/Ejemplos/Python/{input_2}.txt", "a") as fd:
@@ -24,7 +23,7 @@ with open(f"/home/nk-nicolas/Documentos/Apuntes/Personal-Projects/Ejemplos/Pytho
         PID_list.append(line)
     PID_list.remove("")
     print(PID_list)
-     
+
 for i in range(input_1):
     os.wait()
 print("soy el padre")
