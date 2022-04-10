@@ -11,15 +11,12 @@ def main():
     i = 0
     for g in range(len(lista_2)):
         dicc_proc[lista_2[g]] = lista[i]
-        # print(f'{dicc_proc}')
         i += 1
     if veces >= 1:
         for g in range(veces):
             store_letter(dicc_proc)
         print("El proceso ha terminado de cargar los datos")
-    elif veces == 1:
-            store_letter(dicc_proc)
-            print("El proceso ha terminado de cargar los datos")
+        print(dicc_proc)
     else:
         print("ERROR")
 
