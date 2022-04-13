@@ -12,7 +12,7 @@ if not ret:
 time.sleep(1)
 os.wait()
 # espera a que termine el hijo y luego lo lee 
-leido = os.read(r, 100) # el 100 es la cantidad de digitos que lee de ese read
+leido = os.read(r, 100) # el 100 es el tamaño que lee de ese read
 
 print("Padre Leido: ", leido.decode())
 
