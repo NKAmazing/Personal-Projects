@@ -1,4 +1,3 @@
-from base64 import decode
 import os, mmap
 
 # creamos un segmento de memoria anonima
