@@ -1,6 +1,6 @@
 import subprocess as sp
 
-fd = open("/home/nk-nicolas/Documentos/Apuntes/Ejemplos/sp-file.txt", "w+")
+fd = open("/home/nk-nicolas/Documentos/Apuntes/Personal-Projects/Ejemplos/Python/text_files/sp-file.txt", "w+")
 
 # Uso el pipe para pasarle la salida del proceso anterior a la entrada del siguiente
 proc1 = sp.Popen(["ip a"], shell=True, stdout=sp.PIPE)

@@ -1,6 +1,6 @@
 import os, time
 
-fd = open("/home/nk-nicolas/Documentos/Apuntes/Ejemplos/archivo.txt", "w+")
+fd = open("/home/nk-nicolas//Documentos/Apuntes/Personal-Projects/Ejemplos/Python/text_files/archivo.txt", "w+")
 
 if not os.fork():
     fd.write("hijo escribiendo")

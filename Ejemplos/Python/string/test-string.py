@@ -2,7 +2,7 @@ import string
 import time
 
 def main():
-    fd = open("/home/nk-nicolas/Documentos/Apuntes/Personal-Projects/Ejemplos/Python/ejemplo.txt", "w+")
+    fd = open("/home/nk-nicolas/Documentos/Apuntes/Personal-Projects/Ejemplos/Python/text_files/ejemplo.txt", "w+")
     fd.close()
     veces = 3
     lista = list(string.ascii_uppercase)
@@ -22,7 +22,7 @@ def main():
 
 def store_letter(dicc_proc):
     for i in dicc_proc.values():
-        with open("/home/nk-nicolas/Documentos/Apuntes/Personal-Projects/Ejemplos/Python/ejemplo.txt", "a") as fd:
+        with open("/home/nk-nicolas/Documentos/Apuntes/Personal-Projects/Ejemplos/Python/text_files/ejemplo.txt", "a") as fd:
             fd.write(str(i))
             fd.flush()
             time.sleep(1)

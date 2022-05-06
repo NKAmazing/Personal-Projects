@@ -1,6 +1,6 @@
 import sys
 
-sys.stdout.write("Dame un número: ")
+sys.stdout.write("Give me a number: ")
 sys.stdout.flush()
 n = sys.stdin.readline()
 print(n)
